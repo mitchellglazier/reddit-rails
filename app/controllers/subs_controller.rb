@@ -76,6 +76,7 @@ before_action :set_sub, only: [:show, :update, :edit, :destroy]
     else
       render :edit
   end
+end
 
 #delete
   def destroy

@@ -1,3 +1,7 @@
 <h1>Viewing all subs</h1>
 
 <%= link_to 'create new sub', new_sub_path %>
+
+<% @subs.each do |sub| %>
+  <%= link_to sub.name, sub %>
+<% end %>
