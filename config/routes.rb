@@ -14,8 +14,11 @@ Rails.application.routes.draw do
 
  #embedded routes - or nested routes
   resources :subs do
-    resources :topics 
+    resources :topics
   end
 
+resources :topics do
+  resources :comments
+end
 
 end
